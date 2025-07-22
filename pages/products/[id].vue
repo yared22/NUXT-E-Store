@@ -5,7 +5,8 @@
     <ProductDetails :product="product" />
     <NuxtLink
       to="/products"
-      class="text-blue-500 no-underline font-semibold transition-colors duration-300 hover:text-blue-700 hover:underline"
+      class="text-blue-500 no-underline font-semibold transition-colors duration-300 
+      hover:text-blue-700 hover:underline"
       >Back</NuxtLink
     >
   </div>
