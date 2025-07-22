@@ -1,8 +1,8 @@
 <template>
-  <div class="card text-center">
-    <NuxtLink :to="`/products/${product.id}`">
-      <img :src="product.image" alt="Product_image" class="thumb" />
-      <p class="font-bold text-gray-500 m-4 truncate">{{ product.title }}</p>
+  <div class="bg-white rounded-lg shadow-md p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
+    <NuxtLink :to="`/products/${product.id}`" class="block">
+      <img :src="product.image" alt="Product_image" class="h-30 w-18 mx-auto mb-3 object-contain" />
+      <p class="font-bold text-gray-700 text-sm truncate hover:text-blue-600 transition-colors duration-200">{{ product.title }}</p>
     </NuxtLink>
   </div>
 </template>
@@ -13,10 +13,4 @@ import { NuxtLink } from "#components";
 const { product } = defineProps(["product"]);
 </script>
 
-<style scoped>
-.thumb {
-  max-height: 120px;
-  max-width: 70px;
-  margin: 0 auto;
-}
-</style>
+
